@@ -6,9 +6,4 @@ stages:
       shellScript: mvn clean install
     env:
       NEXUS_HOST: http://219.225.95.211:30080
-    envFrom:
-    - sourceName: nexus-key
-      sourceKey: ADMIN
-    - sourceName: nexus-key
-      sourceKey: PASSWORD
 timeout: 60
